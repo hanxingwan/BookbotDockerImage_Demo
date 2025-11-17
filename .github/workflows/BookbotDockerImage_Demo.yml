@@ -21,7 +21,7 @@ jobs:
           docker save -o BookbotDockerImage_Demo.tar bookbotdockerimage_demo
 
       - name: 上传镜像tar包为构建产物
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: BookbotDockerImage_Demo
           path: BookbotDockerImage_Demo.tar
